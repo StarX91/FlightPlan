@@ -1,0 +1,86 @@
+.card {
+  border: 2px solid black;
+  width: 659px;
+  height: 352px;
+  margin-top: 100px;
+  margin-left: 50px;
+  background-color: #000000;
+  border-radius: 5px;
+  justify-content: space-between;
+}
+
+h4 {
+  margin-left: 5px;
+  margin-top: 50px;
+  color: #736c6c;
+  font-family: "League Spartan", sans-serif;
+  font-weight: 400;
+}
+
+.loc {
+  background-color: #333333;
+  margin-left: 10px;
+  margin-top: 10px;
+  padding: 5px 15px 5px 15px;
+  border-radius: 5px;
+}
+
+.pin {
+  width: 30px;
+  height: 30px;
+  margin-top: 30px;
+  margin-left: 10px;
+}
+
+p {
+  color: #a19a9a;
+  font-family: "League Spartan", sans-serif;
+  font-weight: 400;
+  margin-left: 5px;
+  margin-top: 40px;
+}
+
+.currentloc {
+  display: flex;
+}
+
+.button {
+  margin-top: 30px;
+  margin-left: 180px;
+}
+
+.next {
+  padding: 10px 72px;
+  border-radius: 5px;
+  font-family: "League Spartan", sans-serif;
+  font-weight: 600;
+  font-size: large;
+}
+
+.cardl {
+  display: flex; /* Enable flexbox for the card */
+  justify-content: center; /* Center content horizontally */
+  align-items: center;
+  margin-top: 50px;
+}
+
+.cardline {
+  width: 80%; /* Set line width */
+  height: 1px; /* Set line thickness */
+  background-color: #333333; /* Set line color */
+  margin: 5px 0; /* Adjust margins as needed */
+}
+
+.cardltwo {
+  display: flex; /* Enable flexbox for the card */
+  justify-content: center; /* Center content horizontally */
+  align-items: center;
+  margin-top: 30px;
+}
+
+.cardlinetwo {
+  width: 100%; /* Set line width */
+  height: 1px; /* Set line thickness */
+  background-color: #333333; /* Set line color */
+  margin: 5px 0;
+}

@@ -1,0 +1,124 @@
+/* SELECT OPTION */
+
+.mode {
+  font-family: "League Spartan", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 500;
+  font-size: medium;
+  font-style: normal;
+  margin-left: 450px;
+  padding: 10px 15px;
+  background-color: #272727;
+  color: #736c6c;
+  border-radius: 10px;
+}
+
+/* SAVE BUTTON */
+
+.save {
+  font-family: "League Spartan", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 600;
+  font-style: bold;
+  font-size: large;
+  margin-top: 5px;
+  margin-left: 5px;
+  padding: 5px 25px;
+  border-radius: 10px;
+}
+
+/* NAVBAR */
+
+.navbar {
+  display: flex;
+  width: 100%;
+  height: 150px;
+  padding-bottom: 15px;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #000000;
+}
+
+/***************** DIMENSIONS ***********/
+
+.dimen {
+  display: flex;
+  float: left;
+  margin-left: 80px;
+  margin-top: 10px;
+  width: 390px;
+  height: 78px;
+  background-color: #272727;
+  border-radius: 10px;
+}
+
+.dimen div {
+  font-family: "League Spartan", sans-serif;
+  font-weight: 400;
+  font-size: large;
+  color: white;
+  padding-top: 10px;
+}
+
+.height {
+  margin-left: 50px;
+  font-family: "League Spartan", sans-serif;
+  font-weight: 400;
+  font-size: large;
+  color: white;
+}
+
+/**************BUTTONS*****************/
+
+.btnsize {
+  width: 60px;
+  height: 25px;
+  font-family: "League Spartan", sans-serif;
+  font-weight: 500;
+  font-size: large;
+  background-color: #000000;
+  color: white;
+}
+
+/***************ICONS*******************/
+
+.traj {
+  width: 30px;
+  height: 30px;
+  margin-left: 15px;
+  margin-top: 8px;
+  filter: invert(100%) hue-rotate(180deg);
+}
+
+.trajj {
+  width: 30px;
+  height: 40px;
+  margin-left: 10px;
+  padding-top: 10px;
+  filter: invert(100%) hue-rotate(180deg);
+}
+
+.undo {
+  width: 30px;
+  height: 50px;
+  margin-left: 360px;
+  padding-top: 10px;
+
+  filter: invert(100%) hue-rotate(180deg);
+}
+
+.undo2 {
+  width: 30px;
+  height: 50px;
+  filter: invert(100%) hue-rotate(180deg);
+  padding-top: 10px;
+}
+
+.smode {
+  display: flex;
+}
+
+.umode {
+  display: flex;
+  margin-left: 150px;
+}
