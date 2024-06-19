@@ -14,33 +14,21 @@ const options = [
 const Navbar = () => {
   return (
     <div className="navbar">
-      <div className="dimen">
-        <div className="height">
-          <button className="btnsize">70.45</button>
-          <div>Latitude</div>
-        </div>
-        <div className="height">
-          <button className="btnsize">23.45</button>
-          <div>Longtitude</div>
-        </div>
-        <div className="height">
-          <button className="btnsize">7m</button>
-          <div>Altitude</div>
-        </div>
+      <div className="smode">
+        <select className="mode">
+          {options.map((option) => (
+            <option value={option.value}>{option.label}</option>
+          ))}
+        </select>
+        <img className="traj" src={trajectory} alt="" />
+        <img className="trajj" src={trajectoryy} alt="" />
 
-        <div className="smode">
-          <select className="mode">
-            {options.map((option) => (
-              <option value={option.value}>{option.label}</option>
-            ))}
-          </select>
-          <img className="traj" src={trajectory} alt="" />
-          <img className="trajj" src={trajectoryy} alt="" />
-          <div className="umode">
+        <div className="umode">
+          <div className="move">
             <img className="undo" src={undo} alt="" />
             <img className="undo2" src={undo2} alt="" />
-            <button class="save">Save</button>
           </div>
+          <button class="save">Save</button>
         </div>
       </div>
     </div>

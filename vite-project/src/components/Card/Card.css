@@ -1,17 +1,27 @@
 .card {
   border: 2px solid black;
   width: 659px;
-  height: 352px;
-  margin-top: 100px;
-  margin-left: 50px;
+  height: 760px;
   background-color: #000000;
-  border-radius: 5px;
   justify-content: space-between;
 }
 
+/********************LINE***********************/
+
+.li {
+  display: flex; /* Enable flexbox for the card */
+  justify-content: center; /* Center content horizontally */
+  align-items: center;
+}
+
+.lin {
+  width: 100%; /* Set line width */
+  height: 2px; /* Set line thickness */
+  background-color: #333333; /* Set line color */
+}
+
 h4 {
-  margin-left: 5px;
-  margin-top: 50px;
+  margin-top: 20px;
   color: #736c6c;
   font-family: "League Spartan", sans-serif;
   font-weight: 400;
@@ -19,16 +29,19 @@ h4 {
 
 .loc {
   background-color: #333333;
-  margin-left: 10px;
-  margin-top: 10px;
+  color: #a19a9a;
+  width: 400px;
+  height: 37px;
+  margin-top: 15px;
   padding: 5px 15px 5px 15px;
   border-radius: 5px;
+  border: none;
 }
 
 .pin {
   width: 30px;
   height: 30px;
-  margin-top: 30px;
+  margin-top: 25px;
   margin-left: 10px;
 }
 
@@ -37,7 +50,7 @@ p {
   font-family: "League Spartan", sans-serif;
   font-weight: 400;
   margin-left: 5px;
-  margin-top: 40px;
+  margin-top: 30px;
 }
 
 .currentloc {
@@ -45,37 +58,44 @@ p {
 }
 
 .button {
-  margin-top: 30px;
+  margin-top: 20px;
   margin-left: 180px;
 }
 
 .next {
   padding: 10px 72px;
-  border-radius: 5px;
+  border-radius: 15px;
   font-family: "League Spartan", sans-serif;
   font-weight: 600;
+  margin-top: 15px;
   font-size: large;
+  cursor: pointer;
+}
+
+.next:active {
+  color: white;
+  background-color: black;
+  border-color: white;
 }
 
 .cardl {
   display: flex; /* Enable flexbox for the card */
   justify-content: center; /* Center content horizontally */
   align-items: center;
-  margin-top: 50px;
+  margin-top: 20px;
 }
 
 .cardline {
-  width: 80%; /* Set line width */
+  width: 90%; /* Set line width */
   height: 1px; /* Set line thickness */
   background-color: #333333; /* Set line color */
-  margin: 5px 0; /* Adjust margins as needed */
 }
 
 .cardltwo {
   display: flex; /* Enable flexbox for the card */
   justify-content: center; /* Center content horizontally */
   align-items: center;
-  margin-top: 30px;
+  margin-top: 15px;
 }
 
 .cardlinetwo {
@@ -83,4 +103,380 @@ p {
   height: 1px; /* Set line thickness */
   background-color: #333333; /* Set line color */
   margin: 5px 0;
+}
+
+.dot {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-left: 50px;
+  transition: background-color 0.2s ease-in-out;
+}
+
+.dots {
+  color: white;
+  font-size: 60px;
+  letter-spacing: 40px;
+  cursor: pointer;
+}
+
+/****************DIMENSION**********************/
+
+.dimen {
+  display: flex;
+  width: 90%;
+  height: 78px;
+  margin-left: 30px;
+  margin-top: 30px;
+  justify-content: center;
+  background-color: #1e1a1a;
+  border-radius: 10px;
+  outline-offset: 5px;
+}
+
+.height {
+  padding-left: 120px;
+  padding-right: 30px;
+  margin-top: 18px;
+  font-family: "League Spartan", sans-serif;
+  font-weight: 400;
+  font-size: large;
+  color: #736c6c;
+}
+
+#alt {
+  margin-right: 90px;
+}
+
+#lon {
+  margin-left: 15px;
+}
+
+#al {
+  margin-left: 15px;
+}
+
+#lat {
+  margin-left: 7px;
+}
+/**************BUTTONS*****************/
+
+.btnsize {
+  margin-top: 5px;
+
+  font-family: "League Spartan", sans-serif;
+  font-weight: 500;
+  font-size: large;
+  background-color: #1e1a1a;
+  color: white;
+  border: none;
+}
+
+/*******SECTION THREE (FLIGHT TYPE, ALT, *******/
+
+.details {
+  display: flex;
+  width: 90%;
+  height: 100px;
+  margin-top: 2px;
+  background-color: #000000;
+}
+
+p {
+  font-size: large;
+}
+
+.waypoint {
+  background-color: #333333;
+  color: #a19a9a;
+  margin-top: 5px;
+  margin-left: 5px;
+  width: 150px;
+  height: 37px;
+  border-radius: 5px;
+  border: none;
+}
+
+.altitude {
+  margin-left: 40px;
+}
+
+.number {
+  margin-top: 4px;
+  padding-left: 10px;
+  font-size: 13px;
+  background-color: #333333;
+  color: #a19a9a;
+  border: none;
+  height: 45px;
+  border-radius: 5px;
+}
+
+.flightspeed {
+  margin-left: 35px;
+}
+
+.num {
+  margin-top: 3px;
+  padding-left: 10px;
+  font-weight: bold;
+  background-color: #333333;
+  color: #a19a9a;
+  border: none;
+  height: 45px;
+  border-radius: 5px;
+}
+
+.cardlthree {
+  display: flex; /* Enable flexbox for the card */
+  justify-content: center; /* Center content horizontally */
+  align-items: center;
+  margin-top: 15px;
+}
+
+.cardlinethree {
+  width: 100%; /* Set line width */
+  height: 1px; /* Set line thickness */
+  background-color: #333333; /* Set line color */
+  margin: 5px 0;
+}
+
+/************MISSION/FENCE********************/
+
+.rect {
+  background-color: #1e1a1a;
+  margin-top: 15px;
+  height: 320px;
+}
+
+.missfen {
+  display: flex;
+  width: 90%;
+  height: 50px;
+  margin-top: 12px;
+}
+
+.mission {
+  color: #837c7c;
+  background-color: #3a3a3a;
+  width: 250px;
+  padding-left: 80px;
+  padding-right: 80px;
+  margin-right: 20px;
+  padding-top: 5px;
+  margin-bottom: 5px;
+  margin-left: 20px;
+  margin-top: 10px;
+  font-size: medium;
+  border: none;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.mission:active {
+  color: rgb(196, 191, 191);
+  border-style: solid;
+  border-color: rgb(196, 191, 191);
+}
+
+.fence {
+  color: #837c7c;
+  margin-left: 120px;
+  margin-top: 10px;
+  font-size: medium;
+  font-weight: bold;
+  background-color: #292929;
+  width: 220px;
+  padding-left: 70px;
+  padding-right: 80px;
+  cursor: pointer;
+  padding-top: 5px;
+  margin-bottom: 5px;
+  border: none;
+}
+
+.fence:active {
+  color: rgb(196, 191, 191);
+  border-style: solid;
+  border-color: rgb(196, 191, 191);
+}
+
+/************************LINE****************/
+
+.cardlfour {
+  display: flex; /* Enable flexbox for the card */
+  justify-content: center; /* Center content horizontally */
+  align-items: center;
+  margin-top: 5px;
+}
+
+.cardlinefour {
+  width: 95%; /* Set line width */
+  height: 1px; /* Set line thickness */
+  background-color: #333333; /* Set line color */
+  margin: 5px 0;
+}
+
+/******************WAYPOINTS**********************/
+
+.wp {
+  color: #736c6c;
+  font-family: "League Spartan", sans-serif;
+  font-weight: 600;
+  margin-top: 20px;
+  margin-left: 5px;
+}
+
+.pagination {
+  display: flex;
+  align-items: center;
+  color: #736c6c;
+}
+
+ul {
+  margin: 10px 10px;
+}
+
+ul li {
+  display: inline-block;
+  margin: 0 10px;
+  width: 20px;
+  height: 20px;
+  border-radius: 20%;
+  text-align: center;
+  cursor: pointer;
+  background-color: #736c6c;
+  font-weight: 500;
+  color: #000000;
+  font-family: "League Spartan", sans-serif;
+  border: none;
+  padding-top: 3px;
+}
+
+.prev {
+  width: 42px;
+  height: 22px;
+  padding-right: 2px;
+  margin-right: 5px;
+  margin-left: 5px;
+  color: #a19a9a;
+  background-color: #3a3a3a;
+  padding: 2px 3px;
+  border: none;
+  cursor: pointer;
+}
+
+.prev:active {
+  color: rgb(196, 191, 191);
+  border-style: solid;
+  border-color: rgb(196, 191, 191);
+}
+
+.nex {
+  width: 42px;
+  height: 22px;
+  padding-right: 2px;
+  margin-left: 285px;
+  color: #a19a9a;
+  background-color: #3a3a3a;
+  border: none;
+  cursor: pointer;
+}
+
+.nex:active {
+  color: rgb(196, 191, 191);
+  border-style: solid;
+  border-color: rgb(196, 191, 191);
+}
+
+#four {
+  background-color: #b2b2b2;
+}
+
+/*********************LINE 5 *********************/
+
+.cardlfive {
+  display: flex; /* Enable flexbox for the card */
+  justify-content: center; /* Center content horizontally */
+  align-items: center;
+  margin-top: 5px;
+}
+
+.cardlinefive {
+  width: 99%; /* Set line width */
+  height: 1px; /* Set line thickness */
+  background-color: #333333; /* Set line color */
+  margin: 5px 0;
+}
+
+/********************LATITUDE & LONGTITUDE ***************/
+
+.latlong {
+  display: flex;
+}
+
+.latit {
+  margin-left: 30px;
+}
+
+.valone {
+  margin-top: 5px;
+  margin-left: 5px;
+  background-color: #272727;
+  border: none;
+  border-radius: 5px;
+  font-weight: bold;
+  font-size: medium;
+}
+
+.longti {
+  margin-left: 170px;
+}
+
+.valtwo {
+  margin-left: 5px;
+  margin-top: 2px;
+  background-color: #272727;
+  border: none;
+  border-radius: 5px;
+  font-weight: bold;
+  font-size: medium;
+}
+
+.altfly {
+  display: flex;
+}
+
+.altit {
+  margin-left: 30px;
+}
+
+.valthree {
+  margin-left: 5px;
+  margin-top: 2px;
+  background-color: #272727;
+  border: none;
+  border-radius: 5px;
+  font-weight: bold;
+  font-size: medium;
+}
+
+.fligh {
+  margin-left: 170px;
+}
+
+.valfour {
+  margin-left: 5px;
+  margin-top: 2px;
+  background-color: #272727;
+  border: none;
+  border-radius: 5px;
+  font-weight: bold;
+  font-size: medium;
+}
+
+input {
+  width: 150px;
+  height: 26px;
+  padding: 5px 5px;
 }
