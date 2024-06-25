@@ -1,12 +1,10 @@
 import React from "react";
 import "./Card.css";
-import location from "./photos/placeholder.png";
-import leftarrow from "./photos/leftarrow.png";
-import rightarrow from "./photos/rightarrow.png";
 
 const options = [
-  { label: "Way Points", value: 1 },
-  { label: "2", value: 2 },
+  { label: "", value: 1 },
+  { label: "1", value: 2 },
+  { label: "2", value: 3 },
   { label: "3", value: 3 },
   { label: "4", value: 3 },
 ];
@@ -97,7 +95,7 @@ const Card = () => {
                                   <li className="link" value="1">
                                     1
                                   </li>
-                                  <li className="link" value="2">
+                                  <li classN ame="link" value="2">
                                     2
                                   </li>
                                   <li className="link" value="3">
@@ -143,12 +141,12 @@ const Card = () => {
                                     ></input>
                                   </div>
                                   <div className="fligh">
-                                    <p>Longtitude</p>
+                                    <p>Flight Speed</p>
                                     <input
                                       type="text"
                                       className="valfour"
                                       alt=""
-                                      placeholder="75.434"
+                                      placeholder="5 Km/ hr"
                                     />
                                   </div>
                                 </div>

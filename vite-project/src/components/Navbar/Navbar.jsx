@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import "./Navbar.css";
 import trajectory from "./photos/trajectory.png";
 import trajectoryy from "./photos/trajectoryy.png";
@@ -14,6 +14,9 @@ const options = [
 const Navbar = () => {
   return (
     <div className="navbar">
+      <div className="toggle">
+        <a class="butt">Light</a>
+      </div>
       <div className="smode">
         <select className="mode">
           {options.map((option) => (

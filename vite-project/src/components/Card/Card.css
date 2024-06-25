@@ -203,13 +203,14 @@ p {
 
 .number {
   margin-top: 4px;
-  padding-left: 10px;
+  padding-left: 53px;
   font-size: 13px;
   background-color: #333333;
   color: #a19a9a;
   border: none;
   height: 45px;
   border-radius: 5px;
+  cursor: pointer;
 }
 
 .flightspeed {
@@ -218,7 +219,7 @@ p {
 
 .num {
   margin-top: 3px;
-  padding-left: 10px;
+  padding-left: 45px;
   font-weight: bold;
   background-color: #333333;
   color: #a19a9a;
@@ -353,6 +354,12 @@ ul li {
   padding-top: 3px;
 }
 
+ul li:active {
+  color: white;
+  background-color: #000000;
+  border-color: white;
+}
+
 .prev {
   width: 42px;
   height: 22px;
@@ -427,6 +434,7 @@ ul li {
   border-radius: 5px;
   font-weight: bold;
   font-size: medium;
+  color: #a19a9a;
 }
 
 .longti {
@@ -441,6 +449,7 @@ ul li {
   border-radius: 5px;
   font-weight: bold;
   font-size: medium;
+  color: #a19a9a;
 }
 
 .altfly {
@@ -459,6 +468,7 @@ ul li {
   border-radius: 5px;
   font-weight: bold;
   font-size: medium;
+  color: #a19a9a;
 }
 
 .fligh {
@@ -473,6 +483,7 @@ ul li {
   border-radius: 5px;
   font-weight: bold;
   font-size: medium;
+  color: #a19a9a;
 }
 
 input {

@@ -4,7 +4,7 @@ import Navbar from "./components/Navbar/Navbar";
 
 const App = () => {
   return (
-    <div className="container">
+    <div className="container" data-theme="dark">
       <Navbar />
       <div className="containertwo">
         <Card />
