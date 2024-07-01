@@ -8,7 +8,7 @@ const App = () => {
   return (
     <ThemeProvider>
         <Navbar />
-      <div className="sm:flex min[320px]:flex-col">
+      <div className="sm:flex min[320px]:flex-col" >
         <Card />
         <Map/>
       </div>

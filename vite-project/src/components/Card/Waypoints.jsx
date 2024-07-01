@@ -191,7 +191,7 @@ function Waypoints() {
           // className={`card ${theme === 'Dark' ? 'opacity-100 bg-zinc-800 w-8/12 rounded-sm text-zinc-400 py-1': 'opacity-100 bg-zinc-200 w-8/12 rounded-sm text-zinc-800 py-1'}`}
 
             // <div className="waypoint-card text-zinc-400 bg-zinc-900 rounded-md mt-5 py-2 pb-4">
-            <div className={`card ${theme === 'Dark' ? 'waypoint-card text-zinc-400 bg-zinc-900 rounded-md mt-5 py-2 pb-4': 'waypoint-card text-zinc-900 bg-zinc-200 rounded-md mt-5 py-2 pb-4'}`}>
+            <div className={`card ${theme === 'Dark' ? 'waypoint-card text-zinc-400 bg-zinc-900 rounded-md mt-7 py-2 pb-4': 'waypoint-card text-zinc-900 bg-zinc-200 rounded-md mt-5 py-2 pb-4'}`}>
               {/* Type selection buttons */}
               <div className=" flex ">
                 <div className='w-9/12 flex  justify-center '>

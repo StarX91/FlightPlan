@@ -173,7 +173,7 @@ const Card = () => {
     //   </div>
     // </div>
 
-    <div className={`card ${theme === 'Dark' ? 'sm:w-2/6 p-3 bg-black flex-col justify-center min[320px]:w-screen' : 'sm:w-2/6 p-3 bg-zinc-50 flex-col justify-center min[320px]:w-screen'}`}>
+    <div className={`card ${theme === 'Dark' ? 'sm:w-2/6 lg:w-2/6 p-3 bg-zinc-900 flex-col justify-center min[320px]:w-screen min-[1000px]:mt-10 min-[1000px]:ml-5 min-[1200px]:ml-0 min-[1200px]:mt-0 min-[1200px]:rounded-none min-[1000px]:w-4/6 min-[1000px]:rounded-xl' : 'sm:w-2/6 p-3 bg-zinc-50 flex-col justify-center min[320px]:w-screen'}`}>
     {/* // <div className="w-2/6 p-3 bg-black flex-col justify-center" > */}
       <Livelocation/>
       <PreReq/>
