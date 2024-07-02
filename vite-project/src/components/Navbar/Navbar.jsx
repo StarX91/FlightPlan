@@ -4,8 +4,11 @@ import trajectory from "./photos/trajectory.png";
 import trajectoryy from "./photos/trajectoryy.png";
 import undo from "./photos/undo.png";
 import undo2 from "./photos/redo.png";
-import { FaUndo } from "react-icons/fa";
+import { FaUndo,  FaRedo, FaVectorSquare } from "react-icons/fa";
+import { TbRouteSquare2 } from "react-icons/tb";
+
 import { ThemeContext } from "/flightPlan/vite-project/src/context/ThemeContext";
+// import {ThemeContext} from "/f"
 
 const options = [
   { label: "Satellite Mode", value: 1 },
@@ -32,23 +35,21 @@ const Navbar = () => {
               <option value={option.value} className={`card ${theme === 'Dark' ? 'text-white': 'text-white'}`}>{option.label}</option>
             ))}
           </select>
-          <button>
-          {/* <img className="min-[320px]:w-7 min[320px]:h-7 invert" src={trajectory} alt="" /> */}
-          <img className={`card ${theme === 'Dark' ? 'min-[320px]:w-7 min[320px]:h-7 invert': 'min-[320px]:w-7 min[320px]:h-7'}`} src={trajectory} alt="" />
-          </button>
-          <button>
-          <img className={`card ${theme === 'Dark' ? 'min-[320px]:w-7 min[320px]:h-7 invert': 'min-[320px]:w-7 min[320px]:h-7'}`} src={trajectoryy} alt="" />
-          </button>
+          <button className="text-gray-300 hover:text-white focus:outline-none">
+              <FaVectorSquare className="size-full min[320px]:size-11/12" />
+            </button>
+            <button className="text-gray-300 hover:text-white focus:outline-none">
+              <TbRouteSquare2 className="size-full min[320px]:size-11/12" />
+            </button>
       </div>
 
         <div className="flex gap-1">
           <div className="flex py-4 gap-1">
               <button className="text-gray-300 hover:text-white focus:outline-none">
-              <FaUndo className="size-4/5 min[320px]:size-11/12" />
+              <FaUndo className="size-full min[320px]:size-11/12" />
             </button>
-            <button>
-              {/* <img className="min-[320px]:w-5 min[320px]:h-5 scale-x-[-1] h-18 invert" src={undo} alt="" /> */}
-              <img className={`card ${theme === 'Dark' ? 'min-[320px]:w-5 min[320px]:h-18 scale-x-[-1] invert': 'min-[320px]:w-7 scale-x-[-1] min[320px]:h-7'}`} src={undo} alt="" />
+            <button className="text-gray-300 hover:text-white focus:outline-none">
+              <FaRedo className="size-full min[320px]:size-11/12" />
             </button>
           </div>
           {/* <button class="px-4 py-2 bg-white rounded-md my-2  mr-2 text-black font-semibold">Save</button> */}
