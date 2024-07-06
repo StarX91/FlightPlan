@@ -1,5 +1,5 @@
 import React, { useContext } from 'react';
-import { ThemeContext } from "D:/starx91/ground_control_system/flight_plan/vite-project/src/context/ThemeContext.jsx";
+import { ThemeContext } from "/flightPlan/vite-project/src/context/ThemeContext";
 import Livelocation from "./Livelocation";
 import PreReq from "./PreReq";
 import Waypoints from "./Waypoints";
@@ -173,14 +173,27 @@ const Card = () => {
     //   </div>
     // </div>
 
-    <div className={`card ${theme === 'Dark' ? 'sm:w-2/6 p-3 bg-black flex-col justify-center min[320px]:w-screen' : 'sm:w-2/6 p-3 bg-zinc-50 flex-col justify-center min[320px]:w-screen'}`}>
-    {/* // <div className="w-2/6 p-3 bg-black flex-col justify-center" > */}
+    <div 
+    className={`absolute top-1/2 left-1/3 -translate-x-52 lg:-translate-x-80  -translate-y-1/2 w-1/4 h-auto mt-0 xl:ml-0 flex-col justify-center
+      transition duration-300
+      mobile  p-3 shadow-lg 
+      14inch laptop:  lg:p-4 rounded-3xl lg:w-1/3
+      15inch xl:w-1/4 xl:-translate-x-96
+    card ${theme === 'Dark' ? ' bg-black shadow-black' : ' bg-zinc-50 shadow-zinc-600'}`}>
+    {/* // <div className="w-2/6 p-3 bg-black flex-col justify-center w-5/12" > */}
       <Livelocation/>
       <PreReq/>
       <Waypoints/>
-      <div className="flex  mt-4 mb-1 justify-center">
+      <div className="flex  mt-1 lg:mt-2 justify-center">
         {/* <button button className={`px-10 py-1 text-lg font-bold rounded-md bg-white text-black` : `px-10 py-1 text-lg font-bold rounded-md bg-black text-zinc-50 `} > Save</button> */}
-        <button className={`card ${theme === 'Dark' ? 'px-10 py-1 text-lg font-bold rounded-md bg-white text-black' : 'px-10 py-1 text-lg font-bold rounded-md bg-black text-zinc-50'}`}> Save</button>
+        <button 
+        className={`rounded-md
+          transition duration-300
+        mobile px-5 text-md font-medium
+        14inch laptop:  lg:px-10 lg:py-0 lg:text-lg lg:font-bold 
+        card ${theme === 'Dark' 
+          ? ' bg-zinc-200 text-black hover:bg-white' 
+          : ' bg-zinc-700 text-zinc-50 hover:bg-zinc-800'}`}> Save</button>
       </div>
     </div>
   );

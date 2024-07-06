@@ -2,7 +2,8 @@ import React from 'react'
 
 function Map() {
   return (
-    <div className='w-4/6 bg-red-300 h-full text-white'>Map</div>
+    <div className=' bg-neutral-500 text-white w-full h-full
+     lg:h-[calc(100%-48px)] lg:w-full lg:overflow-hidden lg:relative'>Map</div>
   )
 }
 
