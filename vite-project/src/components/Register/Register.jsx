@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useContext } from 'react';
 import { Formik, Form, Field, ErrorMessage } from 'formik';
 import { Link } from 'react-router-dom';
 import * as Yup from 'yup';
@@ -9,14 +9,18 @@ import googleIcon from '../assets/google.png';
 import bck from "../assets/bck.jpg";
 import { useGoogleLogin } from 'react-google-login';
 import starx91 from '../assets/starx91.png';
+import {ProfileContext} from '../../context/ProfileContext';
 
 const clientId = "261778488059-r3p7jn1uctichj37qi3kq21j1fghclns.apps.googleusercontent.com";
 
 const Register = () => {
   const navigate = useNavigate();
+  const { updateProfileImageUrl } = useContext(ProfileContext);
 
   const onSuccess = (res) => {
     console.log("LOGIN SUCCESS! Current user: ", res.profileObj);
+    const profileImage= res.profileObj.imageUrl;
+    updateProfileImageUrl(profileImage);
     navigate('/dashboard');
   };
 

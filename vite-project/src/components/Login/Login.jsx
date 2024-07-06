@@ -1,4 +1,4 @@
-import React from 'react';
+import {React} from 'react';
 import { Formik, Form, Field, ErrorMessage } from 'formik';
 import * as Yup from 'yup';
 import axios from 'axios';
@@ -8,14 +8,20 @@ import appleIcon from '../assets/apple.png';
 import googleIcon from '../assets/google.png';
 import bck from "../assets/bck.jpg";
 import starx91 from '../assets/starx91.png';
+import { useContext } from 'react';
+import {ProfileContext }from '../../context/ProfileContext';
+
 
 const clientId = "261778488059-r3p7jn1uctichj37qi3kq21j1fghclns.apps.googleusercontent.com";
 
 const Login = () => {
+  const { updateProfileImageUrl } = useContext(ProfileContext);
   const navigate = useNavigate();
 
   const onSuccess = (res) => {
-    console.log("LOGIN SUCCESS! Current user: ", res.profileObj);
+    console.log("LOGIN SUCCESS! Current user: ",res.profileObj);
+    const profileImage= res.profileObj.imageUrl;
+    updateProfileImageUrl(profileImage);
     navigate('/dashboard');
   };
 
